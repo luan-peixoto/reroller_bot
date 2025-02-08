@@ -1,4 +1,4 @@
-python~=3.13.1
+python~=3.13.11
 Flask~=3.0.3
 aiohappyeyeballs~=2.4.6
 aiohttp~=3.11.12

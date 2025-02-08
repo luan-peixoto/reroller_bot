@@ -113,10 +113,12 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
+webserver.keep_alive()
 
 @tasks.loop(minutes=2)
 async def send_message_list_task():
     await send_message_list(DESTINATION_CHANNEL_ID)
+    
 
-webserver.keep_alive()
+
 bot.run(YOUR_BOT_TOKEN)
